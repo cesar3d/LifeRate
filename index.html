@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="es-ES" ng-app="translatePage">
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="LifeRate" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Stylesheets Main
+	============================================= -->
+	<link rel="stylesheet" href="https://use.typekit.net/c/f542bf/1w;proxima-nova,36ef81bb4096c8eace860ad61dfbc02f0dc817c9a76374154ce1c9c98967058f,2clzCB:W:i3,2clzCG:W:i4,2clzCJ:W:i6,2clzC6:W:i7,2clzC9:W:n3,2clzCF:W:n4,2clzCH:W:n6,2clzC5:W:n7/l" media="all">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/landingpage.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/et-line.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="css/colors.css" type="text/css" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!-- Document Title
+	============================================= -->
+	<title>LifeRate | 2016</title>
+</head>
+<body class="stretched side-push-panel" ng-controller="ctrlTranslate">
+	<!-- Document Main
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+		<!-- Modal Privacy Policies
+		============================================= -->
+		<button class="btn btn-modal-privacy" data-toggle="modal" data-target="#modalPrivacy">
+			<i class="icon-line2-lock"></i>{{ 'FOOTER_PRIVACY' | translate }}
+		</button>
+		<div class="modal fade" id="modalPrivacy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-body">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="image-privacy">
+								<img src="images/bg-privacy-policies.jpg" alt="Privacy Policies Description" />
+								<div class="btn-ok">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+								</div>
+								<div class="info-header-privacy">
+									<h3>LifeRate®</h3>
+									<p translate>{{ 'FOOTER_PRIVACY' }}</p>
+									<p>versión 1.0</p>
+								</div>
+							</div>
+							<div class="content-privacy">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+
+								<p>
+									LifeRate® &quot;LifeRate&quot;, &quot;nosotros&quot; o &quot;nosotros&quot;) es utilizado para proteger
+									su privacidad. Esta política de privacidad se aplica al uso de las
+									aplicaciones de software creadas por liferate (cada una, una &quot;Aplicación&quot;)
+									en los dispositivos móviles.
+								</p>
+
+								<ol class="m-l-30">
+									<li>
+										El consentimiento del usuario. Mediante el uso de nuestra
+										aplicación, usted está consintiendo a nuestro procesamiento de sus
+										datos personales según lo establecido en esta Política de
+										Privacidad de vez en su versión modificada por
+										nosotros. &quot;Tratamiento&quot; significa el uso de los datos recopilados en
+										un dispositivo de la computadora / mano o usando o información
+										tocar en cualquier forma, incluyendo pero no limitado a, la
+										recogida, almacenamiento, eliminación, utilizando, combinar y
+										revelar la información, todo lo cual las actividades se llevarán a
+										cabo en los Estados Unidos.
+									</li>
+									<li>
+										Una nota acerca de los niños. No utilizar la aplicación para
+										solicitar a sabiendas o datos de mercado a los niños bajo la edad
+										de 13. Si un padre o tutor se da cuenta de que su hijo nos ha
+										proporcionado información sin su consentimiento, él o ella debe
+										ponerse en contacto con nosotros en el apoyo de liferate.com.mx
+										.Vamos a eliminar dicha información de nuestros archivos dentro
+										de un tiempo razonable.
+									</li>
+									<li>
+										Una nota a los usuarios fuera de los Estados Unidos. Sus datos
+										personales pueden ser procesados ​​en el país en el que se han
+										recogido o en otros países, incluyendo los Estados Unidos, donde
+										las leyes con respecto al procesamiento de datos personales
+										pueden ser menos estrictas que las leyes de su país.
+									</li>
+									<li>
+										Tipos de datos que recogemos. &quot;Datos Personales&quot; significa
+										datos que permite a alguien para identificar o contactar, incluyendo,
+										por ejemplo, su nombre, dirección, número de teléfono, dirección
+										de correo electrónico, así como cualquier otra información no
+										pública sobre usted que está asociado con o vinculados a
+										cualquiera de los datos anteriores. &quot;Datos Anónimo&quot; significa datos
+										que no está asociada o vinculada a sus datos personales; Los
+										datos anónimos no lo hace, por sí mismo, permite la identificación
+										de personas individuales. Recopilamos datos personales y los
+										datos anónimos, como se describe abajo.
+									</li>
+									<li>
+										LifeRate® NO pretende ser de uso o grado medico
+									</li>
+									<li>
+										LifeRate® NO sustituye en NINGUN MOMENTO EL MONITOREO CARDIACO MEDICO
+
+										<ol class="m-l-30">
+											<li>
+												A condición de usuario de datos. Cada aplicación obtiene
+												la información que usted proporcione al descargar y registrar
+												la aplicación. Registro con nosotros es opcional. No obstante,
+												tenga en cuenta que es posible que no pueda utilizar algunas
+												de las características ofrecidas por las aplicaciones a menos
+												que se registre con nosotros. Cuando se registra con
+												nosotros y / o utilizar una aplicación, por lo general,
+												proporcionar (a) su nombre, dirección de correo electrónico y
+												otra información de registro (b) la información que nos
+												proporciona cuando se ponga en contacto con nosotros para
+												obtener ayuda; y (c) la información que se introduce en
+												nuestro sistema cuando se utiliza las aplicaciones, tales
+												como sus datos de frecuencia cardiaca ( &quot;Usuario A
+												condición de Datos&quot;). También podemos utilizar la
+												información que usted nos proporciona en contacto con usted
+												de vez en cuando para proporcionarle información
+												importante, requieren avisos y promociones de marketing.
+											</li>
+											<li>
+												Recopilación automática de datos. Además, la aplicación
+												puede recopilar cierta información automáticamente, tales
+												como el tipo de dispositivo móvil que utilice, único ID de
+												dispositivo del dispositivo móvil, la dirección de IP del
+												dispositivo móvil, el sistema operativo móvil, el tipo de
+												navegadores de Internet móvil que utiliza, e información
+												sobre la forma en que utilizan la aplicación. La
+												aplicación  precisa reunir información sobre la ubicación de
+												su dispositivo móvil, el no hacerlo podría incurrir en una falla
+												en la aplicación .  También podemos utilizar cookies y datos
+												de navegación como Localizadores Uniformes de Recursos (
+												&quot;URL (s)&quot;) para reunir información sobre la fecha y hora de su
+												visita y las soluciones e información para los que ya
+												buscadas y que se visualizó. Las &quot;cookies&quot; son pequeñas
+												piezas de información que un sitio web envía a su
+												teléfono  mientras está viendo una página web.  Podemos
+												utilizar tanto cookies de sesión (que expiran una vez que se
+												cierra el navegador) y cookies persistentes (que permanecen
+												en el teléfono inteligente hasta que los borre) para ofrecerle
+												una experiencia más personal e interactivo en nuestros
+												Sitios. Si elige deshabilitar las cookies, nuestras aplicaciones
+												no funcionen correctamente. Como la mayoría de las
+												empresas, que recogemos de forma automática la
+												información descrita anteriormente ( &quot;Los datos recogidos
+												automáticamente&quot;) y la almacenamos en archivos de registro
+												cada vez que utilice las aplicaciones.
+											</li>
+											<li>
+												Información recopilada a terceras sociedades del
+												partido. Podemos recibir personales y / o datos anónimos
+												acerca de usted de las empresas que proporcionan nuestras
+												aplicaciones a través de un sitio web o empresas que
+												anuncian sus productos y / o servicios a través de nuestras
+												aplicaciones de marca o marcado privado. Estas empresas
+												de terceros que nos pueden proveer con datos de carácter
+												personal ,.Podemos añadir esta información a la información
+												que ya hemos recogido de usted.
+											</li>
+											<li>
+												La información recogida de las redes sociales. Nuestras
+												aplicaciones pueden recopilar personales y / o datos
+												anónimos acerca de usted de un sitio de redes sociales (
+												&quot;SNS&quot;), de acuerdo con las condiciones de uso y la política
+												de privacidad del tercero proveedor de dicho Sistema
+												Nacional de Salud, si inicia sesión con sus credenciales de
+												inicio de sesión del SNS. Podemos añadir esta información a
+												la información que ya hemos recogido de usted.
+											</li>
+										</ol>
+
+										<ol class="m-l-60">
+											<li>El uso de sus datos personales</li>
+
+											<ol class="m-l-30">
+												<li>
+													Uso general. En general, los datos personales que usted
+													nos proporciona se utiliza ya sea para responder a las
+													peticiones que se realicen, o para ayudarnos a servirle
+													mejor. Datos tomados de Apple Healthkit nunca es vendida ni
+													compartida con 3 partes o utilizados con fines
+													publicitarios. Formas que utilizan su Datos Personales
+													incluye, pero no se limitan a:
+												</li>
+
+												<ul class="m-l-30">
+													<li>
+														Para facilitar la creación y garantizar su cuenta en nuestra red;
+													</li>
+													<li>
+														Puede identificar como usuario en nuestro sistema;
+													</li>
+													<li>
+														Mejorar la calidad de la experiencia al utilizar nuestras aplicaciones;
+													</li>
+													<li>
+														le enviará un correo electrónico de bienvenida para verificar la
+														propiedad de la dirección de correo electrónico facilitada cuando se
+														creó su cuenta;
+													</li>
+													<li>
+														que enviar notificaciones por correo electrónico administrativos,
+														tales como avisos de seguridad o de soporte y mantenimiento; y
+													</li>
+													<li>
+														para enviar boletines, encuestas, ofertas y otros materiales
+														promocionales relacionados con nuestras aplicaciones y para otros
+														fines de marketing de LifeRate ®
+													</li>
+
+													<ol class="m-l-30">
+														<li>
+															Creación de datos anónimos. Podemos crear registros de
+															datos anónimos de datos personales mediante la exclusión
+															de información (como su nombre) que hacen que los datos
+															de identificación personal a usted. Utilizamos estos datos
+															anónimos para analizar los patrones de uso de petición y
+															para que podamos mejorar el contenido de nuestras
+															aplicaciones. Liferate se reserva el derecho de uso de datos
+															anónimos para cualquier propósito y revelar datos anónimos
+															a terceros, incluyendo pero no limitado a nuestros socios de
+															investigación, a su sola discreción.
+														</li>
+														<li class="m-l--60">
+															La divulgación de sus datos personales. Nos revelará sus datos
+															personales como se describe a continuación y como se describe en
+															otra parte de esta política de privacidad.
+														</li>
+
+														<ol class="m-l--30">
+															<li>
+																Proveedores de Servicios de Terceros. Podemos
+																compartir sus datos personales con terceros proveedores de
+																servicios que trabajan en nuestro nombre. Se requiere que
+																estos terceros proveedores de servicios no utilizar sus datos
+																personales distinto de la prestación de los servicios
+																solicitados por LifeRate
+															</li>
+														</ol>
+													</ol>
+												</ul>
+											</ol>
+										</ol>
+									</li>
+								</ol>
+
+								<p>
+									(B) Los afiliados y adquisiciones. Podemos compartir algunos o todos sus
+									datos personales con nuestra empresa matriz, subsidiarias, empresas
+									conjuntas, u otras compañías bajo un control común ( &quot;Afiliados&quot;), en
+									cuyo caso se requerirá nuestros afiliados respeten esta política de
+									privacidad. Si otra empresa adquiere nuestra empresa, negocio o
+									nuestros activos, esa compañía poseerá los datos personales recogidos
+									por nosotros y asumirá los derechos y obligaciones con respecto a sus
+									datos personales como se describe en esta Política de Privacidad. En el
+									improbable caso de una insolvencia, quiebra o suspensión de pagos, sus
+									datos personales también puede ser transferida como un activo
+									empresarial.
+								</p>
+
+								<p>
+									(C) otras revelaciones. Con independencia de las decisiones que tome
+									en relación con sus datos personales (como se describe más adelante),
+									LifeRate® puede descubrir los datos personales si cree de buena fe que
+									dicha revelación es necesaria (a) en relación con cualquier investigación
+									legal; (B) para cumplir con las leyes pertinentes o para responder a
+									citaciones u órdenes que se presentan en LifeRate; (C) para proteger o
+									defender los derechos o la propiedad del LifeRate o usuarios de los
+									Servicios; y / o (d) para investigar o ayudar en la prevención de cualquier
+									violación o potencial violación de la ley, esta política de privacidad, o
+									cualesquiera condiciones de uso.
+
+									<ol class="m-l-30">
+										<li>
+											Recopilación de Datos de Terceros.
+
+											<ol class="m-l-30">
+												<li>
+													Recogida de datos automático y Publicidad. Podemos
+													trabajar con las empresas de análisis para ayudar a entender
+													cómo se utilizan las aplicaciones, tales como la frecuencia y
+													duración de uso. versiones libres de las aplicaciones son
+													compatibles a través de la publicidad y obtener datos para
+													ayudar a las aplicaciones estarán al servicio de
+													anuncios. Trabajamos con los anunciantes y redes de
+													publicidad de terceros, que necesitan saber cómo interactuar
+													con la publicidad proporcionada en las solicitudes que nos
+													ayuda a mantener el costo de nuestras aplicaciones de baja
+													o libre. Los anunciantes y redes publicitarias utilizan alguna
+													de la información recogida por las aplicaciones, incluidos el
+													ID de identificación única de su dispositivo móvil; Sin
+													embargo, los anunciantes no tendrán acceso a cualquier dato
+													de carácter personal identificable. Estas terceras partes
+													también pueden obtener información acerca de otras
+													aplicaciones que ha descargado a su dispositivo móvil, los
+													sitios web para móviles que visita, la información de
+													ubicación no precisa (p.ej., que Código Postal), y otra
+													información de localización no precisa con el fin de ayudar a
+													analizar y servir la publicidad dirigida anónimo en las
+													aplicaciones y en otros lugares. Si desea darse de baja de un
+													uso a terceros de este tipo de información para ayudar a
+													servir la publicidad dirigida, puede detener toda la colección
+													de información por parte de una aplicación fácilmente
+													mediante la desinstalación de la aplicación. Es posible utilizar
+													los procesos estándar de desinstalación que puede estar
+													disponible como parte de su dispositivo móvil o por el
+													mercado de aplicaciones móviles o de la red.
+												</li>
+												<li>
+													Sitios web de terceros. Al hacer clic en un enlace a
+													cualquier otro sitio web o ubicación, saldrá de nuestra
+													Solicitud e ir a otro sitio y otra entidad puedan recabar datos
+													personales o datos anónimos de usted. No tenemos ningún
+													control sobre, no revisamos y no podemos ser responsables
+													de estos sitios web externos o su contenido. Tenga en
+													cuenta que los términos de esta política de privacidad no se
+													aplican a estos sitios web o contenidos externos, o para
+													cualquier conjunto de datos después de hacer clic en los
+													enlaces a dichos sitios web externos.
+												</li>
+											</ol>
+										</li>
+
+										<li>
+											Política de retención de datos; Sus elecciones respecto a sus
+											datos personales. Vamos a conservar los datos facilitados usuario
+											durante el tiempo que utiliza las aplicaciones y por un tiempo
+											razonable a partir de entonces. Si desea que eliminemos los datos
+											facilitados usuario, póngase en contacto con nosotros
+											en info@liferate.com.mx  y responderemos dentro de un tiempo
+											razonable. Tenga en cuenta que algunos o todos los usuario de los
+											datos facilitados pueden ser necesarios para que las aplicaciones
+											funcionen correctamente, y que pueden ser necesarios para
+											retener cierta información por la ley.
+
+											<ol class="m-l-30">
+												<li>
+													Opciones. Le ofrecemos opciones con respecto a la
+													recopilación, el uso y el intercambio de sus datos personales.
+
+													<ol>
+														<li>
+															Nosotros le enviaremos periódicamente boletines
+															gratuitos y correos electrónicos que promueven
+															directamente el uso de nuestras aplicaciones. Cuando
+															recibe boletines o comunicaciones promocionales de
+															nuestra parte, puede indicar una preferencia para dejar
+															de recibir más comunicaciones de nosotros y usted
+															tendrá la oportunidad de &quot;opt-out&quot; siguiendo las
+															instrucciones para cancelar la suscripción en el correo
+															electrónico que recibe o poniéndose en contacto con
+															nosotros directamente (por favor ver la información de
+															contacto a continuación). instrucciones para cancelar la
+															suscripción se incluirán en cada correo electrónico.
+														</li>
+														<li>
+															A pesar de sus preferencias de correo electrónico
+															indicada, podemos enviarle comunicaciones
+															relacionadas con el servicio, incluidos los avisos de las
+															actualizaciones a nuestra política de privacidad.
+														</li>
+													</ol>
+												</li>
+												<li>
+													Los cambios en los datos personales. Usted puede
+													solicitar la cancelación de sus datos personales por nosotros
+													enviando un correo electrónico a la dirección que figura a
+													continuación, pero tenga en cuenta que podemos ser
+													requeridos para mantener esta información y que también se
+													borre (o de mantener esta información durante un cierto
+													tiempo, en cuyo caso vamos a cumplir con su solicitud de
+													eliminación sólo después de haber cumplido estos
+													requisitos). Cuando eliminemos los datos, se elimina de la
+													base de datos activa, pero puede permanecer en nuestros
+													archivos. Podemos conservar su información por fraude o
+													usos similares.
+												</li>
+											</ol>
+										</li>
+										<li>
+											Seguridad de sus datos personales. LifeRate se compromete a
+											proteger la seguridad de sus datos personales. Usamos una
+											variedad de tecnologías y procedimientos de seguridad estándar
+											de la industria para ayudar a proteger sus datos personales contra
+											el acceso no autorizado, del uso o de la divulgación. Por ejemplo,
+											limitamos el acceso a sus datos personales a los empleados y
+											contratistas que necesitan conocer dicha información para operar,
+											desarrollar o mejorar la Solicitud. Tenga en cuenta que, aunque
+											nos esforzamos por proporcionar razonable seguridad de la
+											información que procesamos y mantenemos, ningún sistema de
+											seguridad puede impedir todos los posibles brechas de
+											seguridad. Por lo tanto, mientras que LifeRate hace esfuerzos
+											razonables para proteger sus datos personales, LifeRate no puede
+											garantizar su seguridad absoluta.
+
+											<ol class="m-l-30">
+												<li>
+													Información del contacto. LifeRate la bienvenida a sus
+													comentarios o preguntas con respecto a esta política de
+													privacidad. Nos envíe un correo electrónico a info@liferate.com.mx
+												</li>
+												<li>
+													Cambios en esta política de privacidad. Esta política de
+													privacidad está sujeta a revisión ocasional, y si hacemos cualquier
+													cambio sustancial en la forma en que utilizamos sus datos
+													personales, que le notificará mediante el envío de un correo
+													electrónico a la última dirección de correo electrónico que nos
+													proporcionó y / o colocando avisos prominentes de los cambios en
+													nuestro sitio y / o el despliegue de una alerta dentro de nuestras
+													aplicaciones.
+												</li>
+												<li>
+													Cualquier cambio a esta política de privacidad serán efectivos
+													cuando ocurra el primero de los treinta (30) días naturales
+													siguientes a nuestra envío de una notificación por correo
+													electrónico a usted o treinta (30) días naturales siguientes a
+													nuestra publicación de la notificación de los cambios en nuestro
+													sitio. Estos cambios se harán efectivos inmediatamente para los
+													nuevos usuarios de nuestro servicio. Tenga en cuenta que en todo
+													momento usted es responsable de actualizar sus datos personales
+													que nos proporcione su dirección de correo electrónico más
+													actual. En el caso de que la última dirección de correo electrónico
+													que usted nos ha proporcionado no es válido, o por cualquier razón
+													no es capaz de entregar a usted el aviso descrito anteriormente,
+													nuestro envío del correo electrónico con dicha notificación
+													constituirá de todos modos notificación efectiva de los cambios que
+													se describen en el anuncio. En cualquier caso, los cambios en esta
+													política de privacidad pueden afectar nuestro uso de los datos
+													personales que usted nos proporcionó antes de nuestra notificación
+													a usted de los cambios. Si no desea permitir cambios en nuestro
+													uso de sus datos personales, deberá comunicarse con nosotros
+													antes de la fecha efectiva de los cambios que desea desactivar su
+													cuenta con nosotros. El uso continuado de nuestras aplicaciones,
+													tras una notificación de cambios indicará que usted reconoce
+													dichos cambios y acepta estar obligado por los términos y
+													condiciones de dichos cambios. Por favor, consulte nuestro sitio
+													regularmente para cualquier cambio a esta política de privacidad.
+												</li>
+											</ol>
+										</li>
+									</ol>
+								</p>
+
+								<p class="text-right">LifeRate® Copyright 2016</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Side Panel Right
+		============================================= -->
+		<div class="body-overlay"></div>
+		<div id="side-panel" class="dark">
+			<div id="side-panel-trigger-close" class="side-panel-trigger">
+				<a href="#"><i class="icon-line-cross"></i></a>
+			</div>
+			<div class="side-panel-wrap">
+				<div class="widget widget_links clearfix">
+					<h4 translate>{{ 'ABOUT' }}</h4>
+
+					<div style="font-size: 14px; line-height: 1.7;">
+						<address style="line-height: 1.7;">
+							{{ 'ADDRESS' | translate }}<br>
+							{{ 'SHORT_DESCRIPTION' | translate }}<br>
+						</address>
+
+						<div class="clear topmargin-sm"></div>
+
+						<abbr title="Phone Number" translate>{{ 'PHONE' }}:</abbr> (614) 128 1793<br>
+						<abbr title="Fax">Fax:</abbr> (614) 1205 4356<br>
+						<abbr title="Email Address" translate>{{ 'EMAIL' }}:</abbr> contacto@liferate.com
+					</div>
+
+					<div class="btn btn-primary btn-block btn-privacy" data-toggle="modal" data-target="#modalPrivacy" translate>{{ 'FOOTER_PRIVACY' }}</div>
+				</div>
+
+				<div class="widget quick-contact-widget clearfix">
+					<h4 translate>{{ 'SOCIAL_NETWORKS' }}</h4>
+
+					<a href="#" class="social-icon si-small si-colored si-facebook" title="Facebook">
+						<i class="icon-facebook"></i>
+						<i class="icon-facebook"></i>
+					</a>
+					<a href="#" class="social-icon si-small si-colored si-twitter" title="Twitter">
+						<i class="icon-twitter"></i>
+						<i class="icon-twitter"></i>
+					</a>
+					<a href="#" class="social-icon si-small si-colored si-linkedin" title="LinkedIn">
+						<i class="icon-linkedin"></i>
+						<i class="icon-linkedin"></i>
+					</a>
+					<a href="#" class="social-icon si-small si-colored si-gplus" title="Google Plus">
+						<i class="icon-gplus"></i>
+						<i class="icon-gplus"></i>
+					</a>
+					<a href="#" class="social-icon si-small si-colored si-instagram" title="Instagram">
+						<i class="icon-instagram"></i>
+						<i class="icon-instagram"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header transparent-header border-full-header dark" data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="100">
+			<div id="header-wrap">
+				<div class="container clearfix">
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-liferate.svg"><img src="images/logo-liferate-color.svg" alt="LifeRate Logo" width="130"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-liferate.svg"><img src="images/logo-liferate-color.svg" alt="LifeRate Logo" width="130"></a>
+					</div>
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="style-3">
+						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+							<li><a href="#" data-href="#wrapper" class="sf-with-ul"><div>LifeRate</div></a></li>
+							<li><a href="#" data-href="#section-features"><div translate>{{ 'NAV_FEATURES' }}</div></a></li>
+							<li><a href="#" data-href="#section-functions"><div translate>{{ 'NAV_FUNCTIONS' }}</div></a></li>
+							<li><a href="#" data-href="#section-video"><div translate>{{ 'NAV_VIDEO' }}</div></a></li>
+							<li><a href="#" data-href="#section-download"><div translate>{{ 'NAV_GET_APP' }}</div></a></li>
+							<li><a href="#" data-href="#section-contact"><div translate>{{ 'NAV_CONTACT' }}</div></a></li>
+						</ul>
+
+						<div id="side-panel-trigger" class="side-panel-trigger"><a href="#"><i class="icon-reorder"></i></a></div>
+
+						<div id="top-cart" class="m-r-10">
+							<a href="#" id="top-cart-trigger"><i class="icon-line2-globe"></i></a>
+							<div class="top-cart-content">
+								<div class="top-cart-title">
+							 		<h4 translate>{{ 'NAV_LANGUAGE' }}</h4>
+								</div>
+								<div class="top-cart-items">
+									<div class="top-cart-item clearfix">
+										<div class="top-cart-item-desc">
+											<a href="" ng-click="changeLanguage('es')">
+												<img src="images/flag-mx.svg" alt="Flag Mexico" width="16"/> {{ 'BUTTON_LANG_ES' | translate }}
+											</a>
+										</div>
+									</div>
+									<div class="top-cart-item clearfix">
+										<div class="top-cart-item-desc">
+											<a href="" ng-click="changeLanguage('en')">
+												<img src="images/flag-us.svg" alt="Flag United States" width="16"/> {{ 'BUTTON_LANG_EN' | translate }}
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
+			<div class="slider-parallax-inner">
+				<div class="swiper-container swiper-parent">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide dark section" style="background-image: url('images/main-1.png');">
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center pull-right slider-info-app">
+									<div data-caption-animate="fadeInUp">
+										<img src="images/icon-liferate.svg" alt="Icon LifeRate" width="130">
+									</div>
+									<p data-caption-animate="fadeInUp" data-caption-delay="200" translate>{{ 'MESSAGE_SLIDER' }}</p>
+									<a href="#" class="button button-rounded button-reveal button-large button-border button-light tright" data-caption-animate="fadeInUp" data-scrollto="#section-functions" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" data-caption-delay="300" translate>{{ 'BUTTON_READ' }}</a>
+									<a href="#" class="button button-rounded button-reveal button-large button-red tright" data-caption-animate="fadeInUp" data-scrollto="#section-download" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" data-caption-delay="300"><i class="icon-angle-right"></i><span translate>{{ 'BUTTON_DOWNLOAD' }}</span></a>
+								</div>
+							</div>
+
+							<div class="video-wrap">
+								<div class="video-overlay" style="background-color: rgba(1,21,43,0.55);"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+			</div>
+		</section>
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap nopadding">
+				<div id="section-features" class="center page-section" style="background-color: #ebeff2;">
+					<div class="container clearfix">
+						<div class="small-text-medium uppercase colored-text" translate>{{ 'NAV_FEATURES' }}</div>
+						<div class="heading-block center">
+							<h2 class="dark-text" translate>{{ 'POWERFUL_FEATURES' }}</h2>
+							<span class="divcenter" translate>{{ 'DISCOVER_FEATURES' }}</span>
+						</div>
+
+						<div class="features-icons">
+							<div class="col_one_fourth">
+								<div class="feature-box fbox-center fbox-outline fbox-effect">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-download i-alt"></i></a>
+									</div>
+									<h3 translate>{{ 'DOWNLOAD' }}</h3>
+								</div>
+							</div>
+
+							<div class="col_one_fourth">
+								<div class="feature-box fbox-center fbox-outline fbox-effect">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-phone-portrait i-alt"></i></a>
+									</div>
+									<h3 translate>{{ 'PORTABILITY' }}</h3>
+								</div>
+							</div>
+
+							<div class="col_one_fourth">
+								<div class="feature-box fbox-center fbox-outline fbox-effect">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-users i-alt"></i></a>
+									</div>
+									<h3 translate>{{ 'CONNECTION' }}</h3>
+								</div>
+							</div>
+
+							<div class="col_one_fourth">
+								<div class="feature-box fbox-center fbox-outline fbox-effect">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-map-marker i-alt"></i></a>
+									</div>
+									<h3 translate>{{ 'LOCALIZATION' }}</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="section-functions" class="center page-section" style="background-color: #fafafa;">
+					<div class="container clearfix">
+						<div class="row">
+							<div class="small-text-medium uppercase colored-text" translate>{{ 'NAV_FUNCTIONS' }}</div>
+							<div class="heading-block center">
+								<h2 class="dark-text" translate>{{ 'HEART_ACTIVITY' }}</h2>
+								<span class="divcenter" translate>{{ 'LEARN_MULTIPLE' }}</span>
+							</div>
+
+							<div class="col-md-4 col-sm-6 bottommargin">
+								<div class="feature-box fbox-right topmargin" data-animate="fadeIn">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-health"></i></a>
+									</div>
+									<h3 translate>{{ 'FEATURE_HEART' }}</h3>
+									<p translate>{{ 'FEATURE_HEART_DESC' }}</p>
+								</div>
+
+								<div class="feature-box fbox-right topmargin" data-animate="fadeIn" data-delay="200">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-user"></i></a>
+									</div>
+									<h3 translate>{{ 'FEATURE_PROFILE' }}</h3>
+									<p translate>{{ 'FEATURE_PROFILE_DESC' }}</p>
+								</div>
+
+								<div class="feature-box fbox-right topmargin" data-animate="fadeIn" data-delay="400">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-users"></i></a>
+									</div>
+									<h3 translate>{{ 'FEATURE_ALERT' }}</h3>
+									<p translate>{{ 'FEATURE_ALERT_DESC' }}</p>
+								</div>
+							</div>
+
+							<div class="col-md-4 hidden-sm center">
+								<img src="images/iphone-iwatch.png" alt="iPhone & iWatch">
+							</div>
+
+							<div class="col-md-4 col-sm-6 bottommargin">
+								<div class="feature-box topmargin text-left" data-animate="fadeIn">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-note"></i></a>
+									</div>
+									<h3 translate>{{ 'FEATURE_HISTORY' }}</h3>
+									<p translate>{{ 'FEATURE_HISTORY_DESC' }}</p>
+								</div>
+
+								<div class="feature-box topmargin text-left" data-animate="fadeIn" data-delay="200">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-warning-sign"></i></a>
+									</div>
+									<h3 translate>{{ 'FEATURE_EMERGENCY' }}</h3>
+									<p translate>{{ 'FEATURE_EMERGENCY_DESC' }}</p>
+								</div>
+
+								<div class="feature-box topmargin text-left" data-animate="fadeIn" data-delay="400">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-globe"></i></a>
+									</div>
+									<h3 translate>{{ 'FEATURE_GPS' }}</h3>
+									<p translate>{{ 'FEATURE_GPS_DESC' }}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="section-video" class="page-section" style="background-color: #ebeff2;">
+					<div class="section nomargin nopadding">
+						<div class="row clearfix common-height">
+							<div class="col-md-12 center">
+								<div>
+									<div class="small-text-medium uppercase colored-text">
+		                    			VIDEO
+		                			</div>
+
+									<div class="heading-block">
+										<h2 class="dark-text" translate>{{ 'SECTION_VIDEO' }}</h2>
+										<span class="divcenter" translate>{{ 'SECTION_VIDEO_DETAILS' }}</span>
+									</div>
+
+									<div class="center bottommargin">
+										<a href="https://www.youtube.com/watch?v=j7rWd0WFjH0" data-lightbox="iframe" style="position: relative;">
+											<img src="images/screenshot-youtube.png" alt="Video Screenshot">
+											<span class="i-overlay nobg"><img src="images/video-play.png" alt="Play"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="section-download" class="page-section" style="background-color: #fafafa;">
+					<div class="section nomargin nopadding">
+						<div class="container clearfix">
+							<div class="row clearfix">
+								<div class="col-lg-5">
+									<div class="small-text-medium uppercase colored-text" translate>
+		                    			{{ 'NAV_GET_APP' }}
+		                			</div>
+									<div class="heading-block">
+										<h2 translate>{{ 'SECTION_GET_APP' }}</h2>
+										<span class="divcenter" translate>{{ 'DOWNLOAD_APP' }}</span>
+									</div>
+									<img src="images/icon-liferate.svg" alt="Icono LifeRate" width="100"/>
+									<img src="images/icon-appstore.png" alt="Icono Appstore" width="220"/>
+								</div>
+
+								<div class="col-lg-7">
+									<div style="position: relative; margin-bottom: -60px;" class="ohidden" data-height-lg="426" data-height-md="567" data-height-sm="470" data-height-xs="287" data-height-xxs="183">
+										<img src="images/iphone-v2.png" style="position: absolute; top: -22px; left: 60px;" data-animate="fadeInUp" data-delay="100" alt="iPhone v2" width="320">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+			<div class="container" id="section-contact">
+				<div class="footer-widgets-wrap clearfix">
+					<div class="col_one_third">
+						<div class="widget clearfix">
+							<h4 translate>{{ 'CONTACT' }}</h4>
+
+							<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+								<address>
+									<strong>{{ 'ADDRESS' | translate }}:</strong><br>
+									Palo Alto Bussiness, Numero 600<br>
+									Chihuahua, Chih. 31120<br>
+								</address>
+								<abbr title="Phone Number"><strong>{{ 'PHONE' | translate }}:</strong></abbr> (614) 128 1793<br>
+								<abbr title="Fax"><strong>Fax:</strong></abbr> (614) 20 4754 3831<br>
+								<abbr title="Email Address"><strong>{{ 'EMAIL' | translate }}:</strong></abbr> info@liferate.com
+							</div>
+						</div>
+					</div>
+
+					<div class="col_one_third">
+						<div class="widget clearfix">
+							<h4 translate>{{ 'TESTIMONIALS' }}</h4>
+							<div class="fslider testimonial nobg noborder noshadow nopadding" data-animation="slide" data-arrows="false">
+								<div class="flexslider">
+									<div class="slider-wrap">
+										<div class="slide">
+											<div class="testi-image">
+												<a href="#"><img src="images/customer-1.jpg" alt="Customer Testimonials #1"></a>
+											</div>
+											<div class="testi-content">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+												<div class="testi-meta">
+													Steve Jobs
+													<span>Apple Inc.</span>
+												</div>
+											</div>
+										</div>
+										<div class="slide">
+											<div class="testi-image">
+												<a href="#"><img src="images/customer-2.jpg" alt="Customer Testimonials #2"></a>
+											</div>
+											<div class="testi-content">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+												<div class="testi-meta">
+													César González
+													<span>UACH.</span>
+												</div>
+											</div>
+										</div>
+										<div class="slide">
+											<div class="testi-image">
+												<a href="#"><img src="images/customer-3.jpg" alt="Customer Testimonials #3"></a>
+											</div>
+											<div class="testi-content">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+												<div class="testi-meta">
+													Jorge Romo
+													<span>Apps Inc.</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col_one_third col_last">
+						<div class="widget quick-contact-widget clearfix">
+							<h4 translate>{{ 'SEND_MESSAGE' }}</h4>
+							<div class="quick-contact-form-result"></div>
+							<form action="https://formspree.io/gofrastudios3d@gmail.com" method="POST" id="form-contact" class="quick-contact-form nobottommargin">
+								<div class="form-process"></div>
+								<div class="input-group divcenter">
+									<span class="input-group-addon"><i class="icon-user"></i></span>
+									<input type="text" class="required form-control input-block-level" id="quick-contact-form-name" name="name" placeholder="{{ 'FORM_NAME' | translate }}" />
+								</div>
+								<div class="input-group divcenter">
+									<span class="input-group-addon"><i class="icon-email2"></i></span>
+									<input type="email" class="required form-control email input-block-level" id="quick-contact-form-email" name="_replyto" placeholder="{{ 'FORM_EMAIL' | translate }}" />
+								</div>
+								<textarea class="required form-control input-block-level short-textarea" id="quick-contact-form-message" name="message" rows="4" cols="30" placeholder="{{ 'FORM_MESSAGE' | translate }}"></textarea>
+								<button type="submit" name="submit" class="btn btn-success nomargin" value="send">{{ 'FORM_SEND' | translate }}</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+				<div class="container clearfix">
+					<div class="col_one_third"></div>
+
+					<div class="col_one_third col_last tright">
+						<img src="images/logo-liferate.svg" alt="Logo LifeRate" width="170" class="footer-logo center">
+
+						<div class="widget clearfix social-red">
+							<a href="#" class="social-icon si-small si-rounded si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+							<a href="#" class="social-icon si-small si-rounded si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+							<a href="#" class="social-icon si-small si-rounded si-instagram">
+								<i class="icon-instagram2"></i>
+								<i class="icon-instagram2"></i>
+							</a>
+						</div>
+
+						<p class="center copyrights-info m-t-70">Copyright Life Rate &copy;2016.</p>
+
+						<div class="copyrights-menu copyright-links nobottommargin center">
+							<a href="#" data-toggle="modal" data-target="#modalPrivacy" translate>{{ 'FOOTER_PRIVACY' }}</a>/<a href="#" translate>{{ 'FOOTER_TERMS' }}</a>
+						</div>
+
+						<p class="center nomargin copyrights-info">
+							{{ 'FOOTER_CREATED' | translate }} @gofrastudios3d
+						</p>
+					</div>
+
+					<div class="col_one_third"></div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+	<!-- Scripts Main
+	============================================= -->
+	<script type="text/javascript" src="js/form-object.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+
+	<!-- Angular
+	============================================= -->
+	<script src="js/plugins/angular/messageformat.js"></script>
+    <script src="js/plugins/angular/angular-1.3.15.js"></script>
+    <script src="js/plugins/angular/angular-animate.js"></script>
+    <script src="js/plugins/angular/angular-cookies.js"></script>
+    <script src="js/plugins/angular/angular-sanitize.js"></script>
+    <script src="js/plugins/angular/angular-translate.js"></script>
+    <script src="js/plugins/angular/angular-translate-interpolation-messageformat.js"></script>
+    <script src="js/plugins/angular/angular-translate-storage-cookie.js"></script>
+    <script src="js/plugins/angular/angular-translate-storage-local.js"></script>
+    <script src="js/plugins/angular/angular-translate-loader-url.js"></script>
+    <script src="js/plugins/angular/angular-translate-loader-static-files.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
