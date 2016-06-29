@@ -1004,9 +1004,9 @@ body.stretched #header.full-header .container {
 }
 
 #header.full-header #logo {
-	padding-right: 30px;
-	margin-right: 30px;
-	margin-left: 50px;
+	padding-right: 20px;
+	margin-right: 0;
+	margin-left: 40px;
 	border-right: 1px solid #EEE;
 }
 
@@ -13156,4 +13156,22 @@ body:not(.no-transition) #wrapper,
 	color: #fff;
 	font-size: 16px;
 	font-weight: 600;
+}
+
+.privacy-policies {
+	margin: 0 120px;
+    text-align: left;
+	color: #212B44;
+}
+
+.privacy-policies p {
+	font-size: 15px;
+	font-weight: 600;
+    line-height: 1.6;
+}
+
+.privacy-policies ol li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.8;
 }
