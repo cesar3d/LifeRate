@@ -133,6 +133,23 @@ var SEMICOLON = SEMICOLON || {};
 
 	$('#myModal').css("max-height", screen.height * .80);
 
+	const email = 'gofrastudios3d@gmail.com';
+	$('#form-contact').on('submit', function(e){
+		e.preventDefault();
+		sendForm($(this));
+
+		return false;
+	})
+
+	function sendForm($form){
+		$.ajax({
+			url: $form.attr('action'),
+			method: 'POST',
+			data: $form.formObject(),
+			dataType: 'json'
+		});
+	}
+
 	SEMICOLON.initialize = {
 
 		init: function(){
