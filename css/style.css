@@ -11189,9 +11189,9 @@ body:not(.device-touch) #gotoTop {
 	top: 3px;
 	font-size: 14px;
 	color: #ffffff;
-	opacity: 0.8;
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-	filter: alpha(opacity=80);
+	opacity: 0.95;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+	filter: alpha(opacity=95);
 }
 
 .toast-close-button:hover,
