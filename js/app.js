@@ -61,7 +61,7 @@ var translationsEN = {
     NAV_CONTACT: 'Contact',
     NAV_LANGUAGE: 'Language',
     NAV_PRIVACY: 'Privacy',
-    MESSAGE_SLIDER: 'Heart Rate App',
+    MESSAGE_SLIDER: 'Life Rate App',
     BUTTON_READ: 'Read More...',
     BUTTON_DOWNLOAD: 'Download',
     BUTTON_LANG_ES: 'Spanish',
