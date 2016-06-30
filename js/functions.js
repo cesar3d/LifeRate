@@ -3425,23 +3425,4 @@ var SEMICOLON = SEMICOLON || {};
 	$(document).ready( SEMICOLON.documentOnReady.init );
 	$window.load( SEMICOLON.documentOnLoad.init );
 	$window.on( 'resize', SEMICOLON.documentOnResize.init );
-
-	const email = 'gofrastudios3d@gmail.com';
-
-	$('#form-contact').on('submit', function(e){
-		e.preventDefault();
-
-		sendForm($(this));
-
-		return false;
-	})
-
-	function sendForm($form){
-		$.ajax({
-		    url: $form.attr('action'),
-		    method: 'POST',
-		    data: $form.formObject(),
-		    dataType: 'json'
-		});
-	}
 })(jQuery);
