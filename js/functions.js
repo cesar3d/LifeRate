@@ -133,8 +133,6 @@ var SEMICOLON = SEMICOLON || {};
 
 	$('#myModal').css("max-height", screen.height * .80);
 
-
-
 	SEMICOLON.initialize = {
 
 		init: function(){
@@ -152,6 +150,7 @@ var SEMICOLON = SEMICOLON || {};
 			SEMICOLON.initialize.pageTransition();
 			SEMICOLON.initialize.dataResponsiveClasses();
 			SEMICOLON.initialize.dataResponsiveHeights();
+			SEMICOLON.initialize.sendEmail();
 
 			$('.fslider').addClass('preloader2');
 
@@ -1010,6 +1009,24 @@ var SEMICOLON = SEMICOLON || {};
 					if( $body.hasClass('device-lg') ) {
 						if( elementHeight != '' ) { element.css( 'height', elementHeight ); }
 					}
+				});
+			}
+		},
+
+		sendEmail: function(){
+			$('#form-contact').on('submit', function(e){
+				e.preventDefault();
+				sendForm($(this));
+
+				return false;
+			})
+
+			function sendForm($form){
+				$.ajax({
+					url: $form.attr('action'),
+					method: 'POST',
+					data: $form.formObject(),
+					dataType: 'json'
 				});
 			}
 		},
