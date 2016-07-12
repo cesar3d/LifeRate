@@ -1693,6 +1693,50 @@
 
 	.button.button-desc span { font-size: 11px; }
 
+
+
+
+	.feature-box .fbox-icon {
+	    margin-bottom: 10px !important;
+	}
+
+	.feature-box h3:after {
+	    width: 50px;
+	}
+
+	.feature-box p {
+		line-height: 1.6 !important;
+	}
+
+	.heading-block {
+		margin-bottom: 90px;
+	}
+
+	.heading-block h2,
+	.heading-block span {
+	    line-height: 1.3;
+	}
+
+	.heading-block.hb-fix:after {
+	    margin: -58px auto 0;
+	}
+
+	.heading-block.hb-fix-2:after {
+	    margin: -34px auto 0;
+	}
+
+	.quick-contact-form .btn-success {
+	    width: 100%;
+	}
+
+	#section-download .section {
+		text-align: center;
+	}
+
+	#section-download .ohidden {
+		display: none;
+	}
+
 	.slider-info-app {
 		top: 40px !important;
 	}
@@ -1707,8 +1751,17 @@
 
 	.slider-info-app .button-reveal {
 		width: 40%;
-		padding: 0 18px;
-		font-size: 13px;
+		display: inline-block !important;
+		padding: 0 18px !important;
+		font-size: 13px !important;
+	}
+
+	.video-overlay {
+		background-color: rgba(1,21,43,0.75) !important;
+	}
+
+	.video-responsive {
+		margin: 15px;
 	}
 }
 
