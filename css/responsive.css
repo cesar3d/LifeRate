@@ -1729,6 +1729,37 @@
 	    width: 100%;
 	}
 
+	#modalPrivacy .image-privacy {
+		height: 280px;
+	}
+
+	#modalPrivacy .info-header-privacy,
+	#modalPrivacy .btn-ok {
+		width: 100%;
+	}
+
+	#modalPrivacy .btn-ok {
+	    bottom: 130px;
+	}
+
+	#modalPrivacy .content-privacy .m-l-30,
+	#modalPrivacy .content-privacy .m-l-60,
+	#modalPrivacy .content-privacy .m-l--30,
+	#modalPrivacy .content-privacy .m-l--60 {
+		margin-left: 0 !important;
+	}
+
+	.privacy-policies {
+		margin: 0;
+	}
+
+	.privacy-policies .m-l-30,
+	.privacy-policies .m-l-60,
+	.privacy-policies .m-l--30,
+	.privacy-policies .m-l--60 {
+		margin-left: 0 !important;
+	}
+
 	#section-download .section {
 		text-align: center;
 	}
