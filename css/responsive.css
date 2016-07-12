@@ -1559,7 +1559,7 @@
 
 	.swiper_wrapper:not(.force-full-screen),
 	.swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide,
-	.ei-slider { height: 180px !important; }
+	.ei-slider { height: 400px !important; }
 
 	.swiper_wrapper .slider-caption h2 { font-size: 28px; }
 
@@ -1693,6 +1693,23 @@
 
 	.button.button-desc span { font-size: 11px; }
 
+	.slider-info-app {
+		top: 40px !important;
+	}
+
+	.slider-info-app img {
+		width: 100px;
+	}
+
+	.slider-info-app p {
+		display: block !important;
+	}
+
+	.slider-info-app .button-reveal {
+		width: 40%;
+		padding: 0 18px;
+		font-size: 13px;
+	}
 }
 
 
